@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#345Dc2",
+  "usingComponents": {
+    "search-input": "/components/common/search-input",
+    "banner": "/components/common/i-banner",
+    "coursecategory": "/pages/index/components/course-category"
+  }
+}

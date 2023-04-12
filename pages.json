@@ -3,15 +3,117 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#345Dc2",
+				"app-plus": {
+					// 设置导航栏 object
+					"titleNView": {
+						// "type": "transparent",
+						// 导航栏的输入框设置
+						"searchInput": {
+							"placeholder": "搜索内容",
+							"placeholderColor": "#979C9D",
+							"borderRadius": "30rpx",
+							"backgroundColor": "#F0F1F2",
+							"align": "center",
+							"disabled": true
+						}
+						// 自定义按钮
+						// #ifdef APP-PLUS
+						,"buttons": [
+							{
+								"fontSize": "23",
+								"float": "right",
+								"fontSrc": "/static/icon/iconfont.ttf",
+								"text": "\ue689"
+							}
+						]
+						// #endif
+					}
+				}
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/categary/categary",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分类",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/article/article",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "阅读",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/question/question",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "问答",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#b0abb3", // 没有选中的颜色
+		"selectedColor": "#345dc2",// 选中的字体颜色
+		"backgroundColor": "#F8F8F8",  // 背景色
+		"borderStyle": "white", // 边框颜色
+		"fontSize": "11px", // 字体大小
+		"height": "52px", // 标签高度
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tab/index.png",
+				"selectedIconPath": "static/tab/index-active.png"
+			},
+			{
+				"pagePath": "pages/categary/categary",
+				"text":"分类",
+				"iconPath": "static/tab/category.png",
+				"selectedIconPath": "static/tab/category-active.png"
+			},
+			{
+				"pagePath": "pages/article/article",
+				"text": "阅读",
+				"iconPath": "static/tab/article.png",
+				"selectedIconPath": "static/tab/article-active.png"
+			},
+			{
+				"pagePath": "pages/question/question",
+				"text": "问答",
+				"iconPath": "static/tab/question.png",
+				"selectedIconPath": "static/tab/question-active.png"
+			},{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tab/my.png",
+				"selectedIconPath": "static/tab/my-active.png"
+			}
+		]
+	}
 }
